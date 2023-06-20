@@ -1,0 +1,12 @@
+{{ define "main" }}
+<article
+  class="mb-16 max-w-5xl mx-auto px-4 prose lg:prose-lg prose-blue dark:prose-dark"
+>
+  <h1 class="font-bold">{{ .Title }}</h1>
+  <p class="font-light mb-2 text-gray-500 text-sm">
+    {{ .Params.date.Format "January 2, 2006" }} · Estimated reading time: {{ .ReadingTime }} minutes
+  </p>
+  
+  {{ .Content }}
+</article>
+{{ end }}
